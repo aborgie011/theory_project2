@@ -1,0 +1,377 @@
+Testing Equal 0s and 1s Single Tape Turing Machine:
+
+Testing accept cases:
+==================================================
+Running on input: 01
+----------------------------------------
+Step 0:
+Tape 1: [0]1_
+Current state: q0
+
+Step 1:
+Tape 1: X[1]_
+Current state: q1
+
+Step 2:
+Tape 1: [X]Y_
+Current state: q2
+
+Step 3:
+Tape 1: [_]XY_
+Current state: q2
+
+Step 4:
+Tape 1: [X]Y_
+Current state: q3
+
+Step 5:
+Tape 1: X[Y]_
+Current state: q3
+
+Step 6:
+Tape 1: XY[_]
+Current state: q3
+
+Step 7:
+Tape 1: XY[_]
+Current state: qaccept
+
+ACCEPT: Halted in accepting state qaccept
+==================================================
+Running on input: 0011
+----------------------------------------
+Step 0:
+Tape 1: [0]011_
+Current state: q0
+
+Step 1:
+Tape 1: X[0]11_
+Current state: q1
+
+Step 2:
+Tape 1: X0[1]1_
+Current state: q1
+
+Step 3:
+Tape 1: X[0]Y1_
+Current state: q2
+
+Step 4:
+Tape 1: [X]0Y1_
+Current state: q2
+
+Step 5:
+Tape 1: [_]X0Y1_
+Current state: q2
+
+Step 6:
+Tape 1: [X]0Y1_
+Current state: q3
+
+Step 7:
+Tape 1: X[0]Y1_
+Current state: q3
+
+Step 8:
+Tape 1: XX[Y]1_
+Current state: q1
+
+Step 9:
+Tape 1: XXY[1]_
+Current state: q1
+
+Step 10:
+Tape 1: XX[Y]Y_
+Current state: q2
+
+Step 11:
+Tape 1: X[X]YY_
+Current state: q2
+
+Step 12:
+Tape 1: [X]XYY_
+Current state: q2
+
+Step 13:
+Tape 1: [_]XXYY_
+Current state: q2
+
+Step 14:
+Tape 1: [X]XYY_
+Current state: q3
+
+Step 15:
+Tape 1: X[X]YY_
+Current state: q3
+
+Step 16:
+Tape 1: XX[Y]Y_
+Current state: q3
+
+Step 17:
+Tape 1: XXY[Y]_
+Current state: q3
+
+Step 18:
+Tape 1: XXYY[_]
+Current state: q3
+
+Step 19:
+Tape 1: XXYY[_]
+Current state: qaccept
+
+ACCEPT: Halted in accepting state qaccept
+==================================================
+Running on input: 000111
+----------------------------------------
+Step 0:
+Tape 1: [0]00111_
+Current state: q0
+
+Step 1:
+Tape 1: X[0]0111_
+Current state: q1
+
+Step 2:
+Tape 1: X0[0]111_
+Current state: q1
+
+Step 3:
+Tape 1: X00[1]11_
+Current state: q1
+
+Step 4:
+Tape 1: X0[0]Y11_
+Current state: q2
+
+Step 5:
+Tape 1: X[0]0Y11_
+Current state: q2
+
+Step 6:
+Tape 1: [X]00Y11_
+Current state: q2
+
+Step 7:
+Tape 1: [_]X00Y11_
+Current state: q2
+
+Step 8:
+Tape 1: [X]00Y11_
+Current state: q3
+
+Step 9:
+Tape 1: X[0]0Y11_
+Current state: q3
+
+Step 10:
+Tape 1: XX[0]Y11_
+Current state: q1
+
+Step 11:
+Tape 1: XX0[Y]11_
+Current state: q1
+
+Step 12:
+Tape 1: XX0Y[1]1_
+Current state: q1
+
+Step 13:
+Tape 1: XX0[Y]Y1_
+Current state: q2
+
+Step 14:
+Tape 1: XX[0]YY1_
+Current state: q2
+
+Step 15:
+Tape 1: X[X]0YY1_
+Current state: q2
+
+Step 16:
+Tape 1: [X]X0YY1_
+Current state: q2
+
+Step 17:
+Tape 1: [_]XX0YY1_
+Current state: q2
+
+Step 18:
+Tape 1: [X]X0YY1_
+Current state: q3
+
+Step 19:
+Tape 1: X[X]0YY1_
+Current state: q3
+
+Step 20:
+Tape 1: XX[0]YY1_
+Current state: q3
+
+Step 21:
+Tape 1: XXX[Y]Y1_
+Current state: q1
+
+Step 22:
+Tape 1: XXXY[Y]1_
+Current state: q1
+
+Step 23:
+Tape 1: XXXYY[1]_
+Current state: q1
+
+Step 24:
+Tape 1: XXXY[Y]Y_
+Current state: q2
+
+Step 25:
+Tape 1: XXX[Y]YY_
+Current state: q2
+
+Step 26:
+Tape 1: XX[X]YYY_
+Current state: q2
+
+Step 27:
+Tape 1: X[X]XYYY_
+Current state: q2
+
+Step 28:
+Tape 1: [X]XXYYY_
+Current state: q2
+
+Step 29:
+Tape 1: [_]XXXYYY_
+Current state: q2
+
+Step 30:
+Tape 1: [X]XXYYY_
+Current state: q3
+
+Step 31:
+Tape 1: X[X]XYYY_
+Current state: q3
+
+Step 32:
+Tape 1: XX[X]YYY_
+Current state: q3
+
+Step 33:
+Tape 1: XXX[Y]YY_
+Current state: q3
+
+Step 34:
+Tape 1: XXXY[Y]Y_
+Current state: q3
+
+Step 35:
+Tape 1: XXXYY[Y]_
+Current state: q3
+
+Step 36:
+Tape 1: XXXYYY[_]
+Current state: q3
+
+Step 37:
+Tape 1: XXXYYY[_]
+Current state: qaccept
+
+ACCEPT: Halted in accepting state qaccept
+
+Testing reject cases:
+==================================================
+Running on input: 0
+----------------------------------------
+Step 0:
+Tape 1: [0]_
+Current state: q0
+
+Step 1:
+Tape 1: X[_]
+Current state: q1
+
+Step 2:
+Tape 1: X[_]
+Current state: qreject
+
+REJECT: Halted in rejecting state qreject
+==================================================
+Running on input: 1
+----------------------------------------
+Step 0:
+Tape 1: [1]_
+Current state: q0
+
+Step 1:
+Tape 1: [1]_
+Current state: qreject
+
+REJECT: Halted in rejecting state qreject
+==================================================
+Running on input: 00
+----------------------------------------
+Step 0:
+Tape 1: [0]0_
+Current state: q0
+
+Step 1:
+Tape 1: X[0]_
+Current state: q1
+
+Step 2:
+Tape 1: X0[_]
+Current state: q1
+
+Step 3:
+Tape 1: X0[_]
+Current state: qreject
+
+REJECT: Halted in rejecting state qreject
+==================================================
+Running on input: 11
+----------------------------------------
+Step 0:
+Tape 1: [1]1_
+Current state: q0
+
+Step 1:
+Tape 1: [1]1_
+Current state: qreject
+
+REJECT: Halted in rejecting state qreject
+==================================================
+Running on input: 011
+----------------------------------------
+Step 0:
+Tape 1: [0]11_
+Current state: q0
+
+Step 1:
+Tape 1: X[1]1_
+Current state: q1
+
+Step 2:
+Tape 1: [X]Y1_
+Current state: q2
+
+Step 3:
+Tape 1: [_]XY1_
+Current state: q2
+
+Step 4:
+Tape 1: [X]Y1_
+Current state: q3
+
+Step 5:
+Tape 1: X[Y]1_
+Current state: q3
+
+Step 6:
+Tape 1: XY[1]_
+Current state: q3
+
+Step 7:
+Tape 1: XY[1]_
+Current state: qreject
+
+REJECT: Halted in rejecting state qreject

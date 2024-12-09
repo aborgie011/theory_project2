@@ -1,0 +1,26 @@
+["Equal0s1sSingleTape", 1]
+# Initial state checks
+["q0", "1", "qreject", "1", "S"]
+["q0", "_", "qreject", "_", "S"]
+["q0", "0", "q1", "X", "R"]
+
+# Traverse to find first 1
+["q1", "0", "q1", "0", "R"]
+["q1", "1", "q2", "Y", "L"]
+["q1", "Y", "q1", "Y", "R"]
+["q1", "_", "qreject", "_", "S"]
+
+# Backtrack looking for unmarked 0
+["q2", "0", "q2", "0", "L"]
+["q2", "X", "q2", "X", "L"]
+["q2", "Y", "q2", "Y", "L"]
+["q2", "_", "q3", "_", "R"]
+
+# Process matched pairs
+["q3", "X", "q3", "X", "R"]
+["q3", "Y", "q3", "Y", "R"]
+["q3", "0", "q1", "X", "R"]
+["q3", "_", "qaccept", "_", "S"]
+
+# Reject unmatched symbols
+["q3", "1", "qreject", "1", "S"]
